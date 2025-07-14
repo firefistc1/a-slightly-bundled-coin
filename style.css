@@ -179,16 +179,4 @@ a.social-link {
 
 a.social-link:hover {
   text-decoration: underline;
-}.logo-swapped {
-  width: 150px;
-  height: auto;
-  margin-top: 20px;
 }
-
-.banner-swapped {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  margin-top: 20px;
-}
-
