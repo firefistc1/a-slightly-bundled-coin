@@ -185,4 +185,19 @@ a.social-link:hover {
   height: auto;
   margin-top: 20px;
 }
+.buy-button.bonkfun {
+  background-color: #ff69b4; /* Hot pink or Bonk style */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-weight: bold;
+}
 
+.buy-button.bonkfun:hover {
+  background-color: #ff85c1;
+}
