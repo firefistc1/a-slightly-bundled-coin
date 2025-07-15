@@ -34,7 +34,14 @@
       <a href="https://letsbonk.fun/YourTokenSlug" class="buy-button bonkfun" target="_blank">
   <img src="letsbonk-logo.png" alt="LetsBonk Logo" style="height: 20px; vertical-align: middle;"> Buy on LetsBonk.fun
 </a>
-      <a href="#" class="btn token"><img src="token-icon.png" alt="Token Icon"> Token (7CP8xqT4RxToytjXXCaBNK32gAtCrUNRwEJJDxpzpump)</a>
+      <!-- Token Copy Button -->
+<button class="buy-button token-copy" onclick="copyTokenAddress()">
+  <img src="token-icon.png" alt="Token Icon" style="height: 20px; vertical-align: middle;">
+  Copy Token Address
+</button>
+
+<!-- Hidden input with placeholder -->
+<input type="text" value="0000000000" id="tokenAddress" style="position:absolute; left:-9999px;">
       <a href="https://dexscreener.com/solana/6rp4q1tbpjkupjnanfxcihzqrmmobxc4a5vr8r27ydmj" class="btn dex"><img src="dex-logo.png" alt="Dexscreener Logo"> Dexscreener</a>
     </div>
   </section>
@@ -69,5 +76,21 @@
   <div class="bubble"></div>
   <div class="bubble"></div>
 </div>
+<script>
+  function copyTokenAddress() {
+    const input = document.getElementById("tokenAddress");
+    input.select();
+    input.setSelectionRange(0, 99999); // For mobile
+    document.execCommand("copy");
+
+    // Feedback for user
+    const button = document.querySelector(".token-copy");
+    const originalText = button.innerHTML;
+    button.innerHTML = "Copied!";
+    setTimeout(() => {
+      button.innerHTML = originalText;
+    }, 1500);
+  }
+</script>
 </body>
 </html>
