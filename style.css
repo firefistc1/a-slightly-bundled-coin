@@ -201,3 +201,21 @@ a.social-link:hover {
 .buy-button.bonkfun:hover {
   background-color: #ff85c1;
 }
+.buy-button.token-copy {
+  background-color: #666;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.buy-button.token-copy:hover {
+  background-color: #444;
+}
