@@ -148,3 +148,11 @@ footer {
 .bubble:nth-child(18) { left: 75%; animation-delay: 15s; }
 .bubble:nth-child(19) { left: 85%; animation-delay: 17s; }
 .bubble:nth-child(20) { left: 92%; animation-delay: 19s; }
+footer .social-link {
+  color: white;
+  text-decoration: underline;
+}
+
+footer .social-link:hover {
+  color: #aaa; /* optional hover effect */
+}
